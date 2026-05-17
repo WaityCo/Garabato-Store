@@ -19,6 +19,9 @@ build/
 .cache/
 coverage/
 
+# Vite
+.vite/
+
 # Env / secrets
 .env
 .env.local
