@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { useState, useMemo } from 'react';
 import { Heart, Share2, Check, ChevronRight, RotateCcw, Truck } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getProductBySlug, getRelated } from '../data/products.js';
+import { getProductBySlug, getProductById, getRelated } from '../data/products.js';
 import { useCartStore } from '../store/cartStore.js';
 import { useUIStore } from '../store/uiStore.js';
 import { looks } from '../data/looks.js';
@@ -42,7 +42,7 @@ export default function ProductPage() {
   const related = getRelated(product, 4);
   const look = looks.find((l) => l.productIds.includes(product.id));
   const lookProducts = look
-    ? look.productIds.map((id) => getRelated({ relatedIds: [id] }, 1)[0]).filter(Boolean)
+    ? look.productIds.map(getProductById).filter(Boolean)
     : [];
 
   const handleAdd = () => {

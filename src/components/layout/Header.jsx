@@ -58,7 +58,7 @@ export default function Header({ overlay = false }) {
               to={l.to}
               className={({ isActive }) =>
                 clsx(
-                  'relative text-[13px] tracking-[0.16em] uppercase font-medium transition-colors',
+                  'group relative text-[13px] tracking-[0.16em] uppercase font-medium transition-colors',
                   isActive ? 'text-current' : 'text-current/80 hover:text-current'
                 )
               }
@@ -67,6 +67,7 @@ export default function Header({ overlay = false }) {
                 <>
                   {l.label}
                   <span
+                    aria-hidden
                     className={clsx(
                       'absolute -bottom-1 left-0 right-0 h-px origin-left transition-transform duration-300 bg-current',
                       isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
