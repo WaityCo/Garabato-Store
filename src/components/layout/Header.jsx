@@ -61,7 +61,7 @@ export default function Header() {
       menuContentColor="#0b0b0b"
       items={ITEMS}
       logoTo="/"
-      logo={<Logo size="md" className="text-black" />}
+      logo={<Logo size="md" variant="black" />}
       menuAriaLabel="Abrir menú"
       rightSlot={
         <button

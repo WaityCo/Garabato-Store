@@ -126,10 +126,13 @@ export default function Footer() {
       </section>
 
       {/* Huge wordmark */}
-      <div aria-hidden className="overflow-hidden -mt-2 select-none">
-        <div className="font-display text-[clamp(6rem,28vw,22rem)] uppercase leading-[0.85] tracking-[-0.03em] text-text/[0.08] px-2 whitespace-nowrap">
-          GARABATO · GARABATO
-        </div>
+      <div aria-hidden className="overflow-hidden -mt-2 select-none px-2">
+        <img
+          src="/logo-wordmark-black.svg"
+          alt=""
+          draggable="false"
+          className="w-full h-auto opacity-[0.12]"
+        />
       </div>
 
       {/* Marquee */}

@@ -4,28 +4,28 @@ import { ArrowUpRight } from 'lucide-react';
 
 const TILES = [
   {
-    label: 'Tees',
-    to: '/shop?cat=tees',
+    label: 'Crema',
+    to: '/product/basica-garabato?color=cream',
     image: '/products/basicas/crema/crema-3.jpg',
-    count: '12 piezas',
+    eyebrow: 'Color 01',
   },
   {
-    label: 'Hoodies',
-    to: '/shop?cat=hoodies',
-    image: '/products/basicas/negra/negra-3.jpg',
-    count: '4 piezas',
-  },
-  {
-    label: 'Pants',
-    to: '/shop?cat=pants',
-    image: '/products/basicas/verde/verde-3.jpg',
-    count: '5 piezas',
-  },
-  {
-    label: 'Accesorios',
-    to: '/shop?cat=accessories',
+    label: 'Blanco',
+    to: '/product/basica-garabato?color=white',
     image: '/products/basicas/blanca/blanca-3.jpg',
-    count: '3 piezas',
+    eyebrow: 'Color 02',
+  },
+  {
+    label: 'Verde',
+    to: '/product/basica-garabato?color=green',
+    image: '/products/basicas/verde/verde-3.jpg',
+    eyebrow: 'Color 03',
+  },
+  {
+    label: 'Negro',
+    to: '/product/basica-garabato?color=black',
+    image: '/products/basicas/negra/negra-3.jpg',
+    eyebrow: 'Color 04',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function CategoryTiles() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
               <div className="absolute inset-0 p-4 lg:p-6 flex flex-col justify-between text-white">
                 <span className="text-[11px] tracking-[0.24em] uppercase text-white/70">
-                  {t.count}
+                  {t.eyebrow}
                 </span>
                 <div className="flex items-end justify-between gap-2">
                   <h3 className="font-display text-3xl lg:text-5xl uppercase leading-none">
