@@ -49,7 +49,7 @@ export default function PromoCountdown() {
           </p>
           <Link
             to="/shop?filter=new"
-            className="mt-6 inline-flex items-center gap-2 px-6 py-3.5 bg-black text-accent font-display tracking-[0.16em] uppercase text-sm hover:bg-bg transition-colors"
+            className="mt-6 inline-flex items-center gap-2 px-6 py-3.5 bg-black text-white font-display tracking-[0.16em] uppercase text-sm hover:bg-accent-2 hover:text-white transition-colors"
           >
             Avísame cuando salga
           </Link>

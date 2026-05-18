@@ -41,7 +41,7 @@ export default function FiltersDrawer({ state, setters, activeCount, resultCount
           >
             <header className="flex items-center justify-between px-5 py-5 border-b border-line">
               <h2 className="font-display text-2xl uppercase">Filtros</h2>
-              <button onClick={close} aria-label="Cerrar" className="p-1.5 rounded-sm hover:bg-white/5">
+              <button onClick={close} aria-label="Cerrar" className="p-1.5 rounded-sm hover:bg-black/5">
                 <X size={22} />
               </button>
             </header>
@@ -51,7 +51,7 @@ export default function FiltersDrawer({ state, setters, activeCount, resultCount
             <footer className="border-t border-line px-5 py-4">
               <button
                 onClick={close}
-                className="w-full px-6 py-4 bg-accent text-black font-display tracking-[0.16em] uppercase text-sm hover:bg-text transition-colors"
+                className="w-full px-6 py-4 bg-black text-white font-display tracking-[0.16em] uppercase text-sm hover:bg-accent-2 transition-colors"
               >
                 Ver {resultCount} productos
               </button>

@@ -47,7 +47,7 @@ export default function SortBar({ sort, setSort, resultCount, activeCount }) {
                     setSort(o.id);
                     setOpen(false);
                   }}
-                  className="w-full text-left px-3 py-2.5 text-xs tracking-[0.14em] uppercase hover:bg-white/5"
+                  className="w-full text-left px-3 py-2.5 text-xs tracking-[0.14em] uppercase hover:bg-black/5"
                 >
                   {o.label}
                 </button>

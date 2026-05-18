@@ -132,7 +132,7 @@ export default function AboutPage() {
         </p>
         <Link
           to="/shop"
-          className="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-accent text-black font-display tracking-[0.16em] uppercase text-sm hover:bg-text transition-colors"
+          className="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-black text-white font-display tracking-[0.16em] uppercase text-sm hover:bg-accent-2 transition-colors"
         >
           Ver tienda <ArrowRight size={16} />
         </Link>

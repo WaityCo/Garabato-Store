@@ -5,6 +5,7 @@ import Footer from './Footer.jsx';
 import AnnouncementBar from './AnnouncementBar.jsx';
 import CartDrawer from './CartDrawer.jsx';
 import GradualBlur from '../common/GradualBlur.jsx';
+import EmailPopup from '../common/EmailPopup.jsx';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -23,6 +24,7 @@ export default function Layout() {
       </main>
       <Footer />
       <CartDrawer />
+      <EmailPopup />
 
       {/* Soft fade behind the floating BubbleMenu — sits above content, below the bubbles (zIndex 99) */}
       <GradualBlur

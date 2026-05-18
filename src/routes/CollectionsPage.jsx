@@ -54,7 +54,7 @@ export default function CollectionsPage() {
                 </p>
                 <Link
                   to={`/collections/${col.handle}`}
-                  className="self-start group inline-flex items-center gap-2 px-7 py-3.5 border border-line text-text font-display tracking-[0.16em] uppercase text-sm hover:bg-white/5 hover:border-text transition-colors"
+                  className="self-start group inline-flex items-center gap-2 px-7 py-3.5 border border-line text-text font-display tracking-[0.16em] uppercase text-sm hover:bg-black/5 hover:border-text transition-colors"
                 >
                   Explorar
                   <ArrowUpRight

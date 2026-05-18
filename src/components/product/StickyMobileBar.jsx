@@ -20,7 +20,7 @@ export default function StickyMobileBar({ price, compareAt, onAdd, disabled }) {
         <button
           onClick={onAdd}
           disabled={disabled}
-          className="flex-1 px-6 py-3.5 bg-accent text-black font-display tracking-[0.16em] uppercase text-sm hover:bg-text disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="flex-1 px-6 py-3.5 bg-black text-white font-display tracking-[0.16em] uppercase text-sm hover:bg-accent-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           Añadir al carrito
         </button>

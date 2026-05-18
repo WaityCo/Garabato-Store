@@ -81,7 +81,7 @@ export default function Footer() {
             </label>
             <button
               type="submit"
-              className="px-6 py-3 bg-accent text-black font-display tracking-[0.16em] uppercase text-sm hover:bg-text transition-colors"
+              className="px-6 py-3 bg-black text-white font-display tracking-[0.16em] uppercase text-sm hover:bg-accent-2 transition-colors"
             >
               Suscribirme
             </button>

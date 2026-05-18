@@ -57,7 +57,7 @@ export default function CartDrawer() {
               <button
                 onClick={close}
                 aria-label="Cerrar carrito"
-                className="p-1.5 rounded-sm hover:bg-white/5"
+                className="p-1.5 rounded-sm hover:bg-black/5"
               >
                 <X size={22} />
               </button>
@@ -91,7 +91,7 @@ export default function CartDrawer() {
                   <Link
                     to="/shop"
                     onClick={close}
-                    className="px-6 py-3 bg-accent text-black font-display tracking-[0.16em] uppercase text-xs hover:bg-text transition-colors"
+                    className="px-6 py-3 bg-accent-2 text-white font-display tracking-[0.16em] uppercase text-xs hover:bg-black transition-colors"
                   >
                     Ver tienda
                   </Link>
@@ -139,7 +139,7 @@ export default function CartDrawer() {
                             <button
                               onClick={() => updateQty(it.key, it.qty - 1)}
                               aria-label="Restar"
-                              className="px-2 py-1.5 hover:bg-white/5"
+                              className="px-2 py-1.5 hover:bg-black/5"
                             >
                               <Minus size={14} />
                             </button>
@@ -147,7 +147,7 @@ export default function CartDrawer() {
                             <button
                               onClick={() => updateQty(it.key, it.qty + 1)}
                               aria-label="Sumar"
-                              className="px-2 py-1.5 hover:bg-white/5"
+                              className="px-2 py-1.5 hover:bg-black/5"
                             >
                               <Plus size={14} />
                             </button>
@@ -175,7 +175,7 @@ export default function CartDrawer() {
                 </p>
                 <button
                   onClick={() => alert('Checkout (mock).')}
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-accent text-black font-display tracking-[0.16em] uppercase text-sm hover:bg-text transition-colors"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-black text-white font-display tracking-[0.16em] uppercase text-sm hover:bg-accent-2 transition-colors"
                 >
                   Pagar ahora <ArrowRight size={16} />
                 </button>

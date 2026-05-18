@@ -102,7 +102,7 @@ export default function ProductGallery({ images = [], name }) {
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms] ease-out group-hover:scale-[1.02]"
               loading={i < 2 ? 'eager' : 'lazy'}
             />
-            <span className="absolute top-3 right-3 p-1.5 bg-bg/40 backdrop-blur-sm text-white opacity-0 group-hover:opacity-100 transition-opacity">
+            <span className="absolute top-3 right-3 p-1.5 bg-black/60 backdrop-blur-sm text-white opacity-0 group-hover:opacity-100 transition-opacity">
               <Expand size={14} />
             </span>
           </motion.button>

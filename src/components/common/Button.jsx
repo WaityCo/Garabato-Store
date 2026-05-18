@@ -22,11 +22,11 @@ const Button = forwardRef(function Button(
     xl: 'px-10 py-5 text-base',
   };
   const variants = {
-    primary:   'bg-accent text-black hover:bg-text',
-    secondary: 'bg-text text-black hover:bg-accent',
-    outline:   'border border-line text-text hover:bg-white/5 hover:border-text',
-    ghost:     'text-text hover:bg-white/5',
-    dark:      'bg-bg text-text border border-line hover:border-text',
+    primary:   'bg-accent text-black hover:bg-black hover:text-white',
+    secondary: 'bg-black text-white hover:bg-accent hover:text-black',
+    outline:   'border border-line text-text hover:bg-black/5 hover:border-text',
+    ghost:     'text-text hover:bg-black/5',
+    dark:      'bg-surface text-text border border-line hover:border-text',
   };
   return (
     <As

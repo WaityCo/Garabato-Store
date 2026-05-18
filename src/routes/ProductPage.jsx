@@ -132,7 +132,7 @@ export default function ProductPage() {
           <div className="hidden lg:flex flex-col gap-3 mt-6">
             <button
               onClick={handleAdd}
-              className="relative w-full px-7 py-4 bg-accent text-black font-display tracking-[0.16em] uppercase text-sm hover:bg-text transition-colors overflow-hidden"
+              className="relative w-full px-7 py-4 bg-black text-white font-display tracking-[0.16em] uppercase text-sm hover:bg-accent-2 transition-colors overflow-hidden"
             >
               <AnimatePresence mode="wait">
                 {added ? (
