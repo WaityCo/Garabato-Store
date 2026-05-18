@@ -125,14 +125,33 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* Wordmark watermark — stretched full width, NUDE PROJECT style */}
-      <div aria-hidden className="overflow-hidden select-none px-4 lg:px-8 pt-4 pb-2">
-        <img
-          src="/logo-wordmark-black.svg"
-          alt=""
-          draggable="false"
-          className="block w-full h-[18vw] min-h-[120px] max-h-[260px] opacity-[0.22]"
-        />
+      {/* Wordmark watermark — three side-by-side, sides allowed to clip */}
+      <div
+        aria-hidden
+        className="overflow-hidden select-none pt-4 pb-2 opacity-[0.22]"
+      >
+        <div className="flex items-center justify-center gap-6 lg:gap-10 w-max mx-auto">
+          <img
+            src="/logo-wordmark-black.svg"
+            alt=""
+            draggable="false"
+            className="block h-[18vw] min-h-[120px] max-h-[260px] w-auto flex-shrink-0"
+          />
+          <span className="block w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-black flex-shrink-0" />
+          <img
+            src="/logo-wordmark-black.svg"
+            alt=""
+            draggable="false"
+            className="block h-[18vw] min-h-[120px] max-h-[260px] w-auto flex-shrink-0"
+          />
+          <span className="block w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-black flex-shrink-0" />
+          <img
+            src="/logo-wordmark-black.svg"
+            alt=""
+            draggable="false"
+            className="block h-[18vw] min-h-[120px] max-h-[260px] w-auto flex-shrink-0"
+          />
+        </div>
       </div>
 
       {/* Marquee */}
