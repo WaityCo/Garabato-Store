@@ -125,13 +125,13 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* Huge wordmark */}
-      <div aria-hidden className="overflow-hidden -mt-2 select-none px-2">
+      {/* Wordmark watermark */}
+      <div aria-hidden className="overflow-hidden select-none px-5 lg:px-12 py-8 flex justify-center">
         <img
           src="/logo-wordmark-black.svg"
           alt=""
           draggable="false"
-          className="w-full h-auto opacity-[0.12]"
+          className="w-full max-w-[520px] h-auto opacity-[0.18]"
         />
       </div>
 
