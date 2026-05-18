@@ -125,33 +125,27 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* Wordmark watermark — three side-by-side, sides allowed to clip */}
+      {/* Wordmark watermark — two wordmarks side by side, divided by a dot */}
       <div
         aria-hidden
-        className="overflow-hidden select-none pt-4 pb-2 opacity-[0.22]"
+        className="overflow-hidden select-none px-4 lg:px-8 pt-4 pb-2 flex items-center justify-center gap-6 lg:gap-10 whitespace-nowrap"
       >
-        <div className="flex items-center justify-center gap-6 lg:gap-10 w-max mx-auto">
-          <img
-            src="/logo-wordmark-black.svg"
-            alt=""
-            draggable="false"
-            className="block h-[18vw] min-h-[120px] max-h-[260px] w-auto flex-shrink-0"
-          />
-          <span className="block w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-black flex-shrink-0" />
-          <img
-            src="/logo-wordmark-black.svg"
-            alt=""
-            draggable="false"
-            className="block h-[18vw] min-h-[120px] max-h-[260px] w-auto flex-shrink-0"
-          />
-          <span className="block w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-black flex-shrink-0" />
-          <img
-            src="/logo-wordmark-black.svg"
-            alt=""
-            draggable="false"
-            className="block h-[18vw] min-h-[120px] max-h-[260px] w-auto flex-shrink-0"
-          />
-        </div>
+        <img
+          src="/logo-wordmark-black.svg"
+          alt=""
+          draggable="false"
+          className="block h-[18vw] min-h-[120px] max-h-[260px] w-auto opacity-[0.22] flex-shrink-0"
+        />
+        <span
+          className="block rounded-full bg-text/30 flex-shrink-0"
+          style={{ width: 'clamp(10px, 1.2vw, 18px)', height: 'clamp(10px, 1.2vw, 18px)' }}
+        />
+        <img
+          src="/logo-wordmark-black.svg"
+          alt=""
+          draggable="false"
+          className="block h-[18vw] min-h-[120px] max-h-[260px] w-auto opacity-[0.22] flex-shrink-0"
+        />
       </div>
 
       {/* Marquee */}
