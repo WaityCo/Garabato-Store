@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { ShoppingBag } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useUIStore } from '../../store/uiStore.js';
@@ -50,9 +51,31 @@ const ITEMS = [
   },
 ];
 
+// AnnouncementBar height in px (matches its py-2.5 + marquee + border).
+const ANNOUNCEMENT_HEIGHT = 44;
+const BASE_TOP = 20; // matches BubbleMenu.css default top (1.25em)
+
+function useBubbleMenuTop() {
+  const [top, setTop] = useState(ANNOUNCEMENT_HEIGHT + BASE_TOP);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const y = window.scrollY;
+      if (y >= ANNOUNCEMENT_HEIGHT) setTop(BASE_TOP);
+      else setTop(ANNOUNCEMENT_HEIGHT - y + BASE_TOP);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return top;
+}
+
 export default function Header() {
   const openCart = useUIStore((s) => s.openCart);
   const cartCount = useCartCount();
+  const top = useBubbleMenuTop();
 
   return (
     <BubbleMenu
@@ -63,6 +86,7 @@ export default function Header() {
       logoTo="/"
       logo={<Logo size="md" variant="black" />}
       menuAriaLabel="Abrir menú"
+      style={{ top: `${top}px`, transition: 'top 0.15s linear' }}
       rightSlot={
         <button
           type="button"
