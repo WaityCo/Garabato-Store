@@ -42,6 +42,7 @@ const TextPressure = ({
   className = '',
 
   minFontSize = 24,
+  textAlign = 'center',
 }) => {
   const containerRef = useRef(null);
   const titleRef = useRef(null);
@@ -223,9 +224,9 @@ const TextPressure = ({
           fontSize,
           lineHeight,
           transform: `scale(1, ${scaleY})`,
-          transformOrigin: 'center top',
+          transformOrigin: textAlign === 'left' ? 'left top' : 'center top',
           margin: 0,
-          textAlign: 'center',
+          textAlign,
           userSelect: 'none',
           whiteSpace: 'nowrap',
           fontWeight: 100,
