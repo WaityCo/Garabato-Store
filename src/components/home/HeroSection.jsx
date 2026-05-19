@@ -58,10 +58,10 @@ export default function HeroSection() {
             initial="hidden"
             animate="show"
             custom={2}
-            className="select-none w-full max-w-[20rem] sm:max-w-[26rem] lg:max-w-[34rem]"
+            className="select-none w-full max-w-[18rem] sm:max-w-[22rem] lg:max-w-[28rem]"
             aria-label="Marca tu trazo."
           >
-            <div className="w-full" style={{ height: 'clamp(3rem, 8vw, 7rem)' }}>
+            <div className="w-full" style={{ height: 'clamp(3.25rem, 8vw, 7rem)' }}>
               <TextPressure
                 text="MARCA TU"
                 textColor="#ffffff"
@@ -73,7 +73,7 @@ export default function HeroSection() {
                 textAlign="left"
               />
             </div>
-            <div className="w-full -mt-2 lg:-mt-3" style={{ height: 'clamp(3rem, 8vw, 7rem)' }}>
+            <div className="w-full -mt-1" style={{ height: 'clamp(4.25rem, 10.5vw, 9.5rem)' }}>
               <TextPressure
                 text="TRAZO."
                 textColor="#e8dccb"
