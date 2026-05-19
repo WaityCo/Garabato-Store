@@ -8,7 +8,7 @@ import { formatPrice } from '../components/common/Price.jsx';
 export default function LookbookPage() {
   return (
     <>
-      <section className="px-5 lg:px-12 pt-16 lg:pt-24 pb-8 border-b border-line">
+      <section className="px-5 lg:px-12 pt-24 lg:pt-28 pb-8 border-b border-line">
         <p className="text-xs tracking-[0.3em] uppercase text-soft mb-3">
           Editorial · SS/26
         </p>

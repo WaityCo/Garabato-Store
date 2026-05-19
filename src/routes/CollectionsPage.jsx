@@ -7,7 +7,7 @@ import { products } from '../data/products.js';
 export default function CollectionsPage() {
   return (
     <>
-      <section className="px-5 lg:px-12 pt-16 pb-8 lg:pt-24 border-b border-line">
+      <section className="px-5 lg:px-12 pt-24 pb-8 lg:pt-28 border-b border-line">
         <p className="text-xs tracking-[0.3em] uppercase text-soft mb-3">
           Archivo
         </p>

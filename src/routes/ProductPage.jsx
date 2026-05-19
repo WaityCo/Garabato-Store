@@ -62,7 +62,7 @@ export default function ProductPage() {
 
   return (
     <>
-      <div className="px-5 lg:px-12 pt-6 lg:pt-10">
+      <div className="px-5 lg:px-12 pt-24 lg:pt-28">
         <Breadcrumbs
           items={[
             { label: 'Inicio', to: '/' },

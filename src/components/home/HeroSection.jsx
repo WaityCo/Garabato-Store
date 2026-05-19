@@ -36,7 +36,7 @@ export default function HeroSection() {
       </div>
 
       {/* Top eyebrow row */}
-      <div className="relative flex-1 grid grid-rows-[auto_1fr_auto] px-5 lg:px-12 pt-24 lg:pt-32 pb-12">
+      <div className="relative flex-1 grid grid-rows-[auto_1fr_auto] px-5 lg:px-12 pt-36 lg:pt-44 pb-12">
         <motion.div
           variants={fadeUp}
           initial="hidden"
