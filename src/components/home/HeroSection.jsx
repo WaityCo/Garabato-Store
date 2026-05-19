@@ -16,7 +16,7 @@ const fadeUp = {
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[100svh] -mt-14 lg:-mt-16 flex flex-col text-white overflow-hidden">
+    <section className="relative min-h-[calc(100svh-44px)] flex flex-col text-white overflow-hidden">
       {/* Background image — full bleed */}
       <div aria-hidden className="absolute inset-0">
         <img
@@ -36,7 +36,7 @@ export default function HeroSection() {
       </div>
 
       {/* Top eyebrow row */}
-      <div className="relative flex-1 grid grid-rows-[auto_1fr_auto] px-5 lg:px-12 pt-36 lg:pt-44 pb-12">
+      <div className="relative flex-1 grid grid-rows-[auto_1fr_auto] px-5 lg:px-12 pt-24 lg:pt-28 pb-12">
         <motion.div
           variants={fadeUp}
           initial="hidden"
