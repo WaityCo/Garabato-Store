@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowDown } from 'lucide-react';
+import TextPressure from '../common/TextPressure.jsx';
 
 const HERO_IMG = '/products/basicas/negra/negra-1.jpg';
 const HERO_IMG_2 = '/products/basicas/verde/verde-1.jpg';
@@ -52,15 +53,37 @@ export default function HeroSection() {
 
         {/* Big claim */}
         <div className="flex flex-col justify-end gap-6">
-          <motion.h1
+          <motion.div
             variants={fadeUp}
             initial="hidden"
             animate="show"
             custom={2}
-            className="font-display uppercase leading-[0.86] tracking-[-0.01em] text-[clamp(4rem,15vw,13rem)] text-balance"
+            className="w-full select-none"
+            aria-label="Marca tu trazo."
           >
-            Marca<br />tu trazo.
-          </motion.h1>
+            <div className="w-full" style={{ height: 'clamp(4rem, 13vw, 11rem)' }}>
+              <TextPressure
+                text="MARCA TU"
+                textColor="#ffffff"
+                italic={false}
+                weight
+                width
+                flex
+                minFontSize={48}
+              />
+            </div>
+            <div className="w-full" style={{ height: 'clamp(4rem, 13vw, 11rem)' }}>
+              <TextPressure
+                text="TRAZO."
+                textColor="#e8dccb"
+                italic
+                weight
+                width
+                flex
+                minFontSize={48}
+              />
+            </div>
+          </motion.div>
 
           <motion.p
             variants={fadeUp}
